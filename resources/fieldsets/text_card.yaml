@@ -1,0 +1,7 @@
+title: 'Text Card'
+fields:
+  -
+    handle: text
+    field:
+      type: text
+      display: Text

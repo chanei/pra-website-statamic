@@ -1,0 +1,15 @@
+title: Theme
+tabs:
+  general:
+    display: General
+    sections:
+      -
+        fields:
+          -
+            handle: logo
+            field:
+              container: assets
+              mode: grid
+              max_files: 1
+              type: assets
+              display: Logo

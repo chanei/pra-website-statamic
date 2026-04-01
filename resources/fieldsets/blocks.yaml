@@ -1,0 +1,48 @@
+title: Blocks
+fields:
+  -
+    handle: blocks
+    field:
+      button_label: 'Add Block'
+      type: replicator
+      display: Blocks
+      instructions: 'Build page by using predefined models'
+      listable: false
+      sets:
+        main:
+          display: Main
+          sets:
+            hero_home:
+              display: 'Hero Home'
+              fields:
+                -
+                  import: hero_section
+            text_and_image:
+              display: 'Text and Image'
+              fields:
+                -
+                  import: text_image_block
+            cards:
+              display: Cards
+              fields:
+                -
+                  handle: heading
+                  field:
+                    type: text
+                    display: Heading
+                -
+                  handle: cards
+                  field:
+                    type: replicator
+                    display: Cards
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          new_set:
+                            display: 'New Set'
+                            fields:
+                              -
+                                import: icon_cards
+                -
+                  import: text_card

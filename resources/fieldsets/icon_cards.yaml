@@ -1,0 +1,19 @@
+title: 'Icon Cards'
+fields:
+  -
+    handle: icon
+    field:
+      container: assets
+      max_files: 1
+      type: assets
+      display: Icon
+  -
+    handle: heading
+    field:
+      type: text
+      display: Heading
+  -
+    handle: sub_heading
+    field:
+      type: text
+      display: 'Sub Heading'

@@ -1,0 +1,34 @@
+title: 'Hero Section'
+fields:
+  -
+    handle: primary_title
+    field:
+      type: text
+      display: 'Primary Title'
+  -
+    handle: secondary_title
+    field:
+      type: text
+      display: 'Secondary Title'
+  -
+    handle: image
+    field:
+      container: assets
+      max_files: 1
+      min_files: 1
+      type: assets
+      display: Image
+  -
+    handle: button_group
+    field:
+      type: replicator
+      display: 'Button Group'
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            new_set:
+              display: 'New Set'
+              fields:
+                -
+                  import: button

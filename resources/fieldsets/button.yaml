@@ -1,0 +1,26 @@
+title: Button
+fields:
+  -
+    handle: button_label
+    field:
+      type: text
+      display: 'Button Label'
+  -
+    handle: entries_field
+    field:
+      collections:
+        - pages
+      type: entries
+      display: 'Entries Field'
+  -
+    handle: button_group_field
+    field:
+      options:
+        -
+          key: primary
+          value: Primary
+        -
+          key: secondary
+          value: Secondary
+      type: button_group
+      display: 'Button Group Field'

@@ -1,0 +1,37 @@
+<div
+    class="relative bg-cover bg-center min-h-screen pt-4 pb-4"
+    {{ image }}
+        style="background-position: {{ focus | background_position }}; background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('{{ glide width="2000" height="800" :src="url" }}')"
+    {{ /image }}
+>
+    <div class="relative mt-10 pt-14">
+        <div class="flex flex-col items-center text-center gap-4 pt-6 md:pt-14">
+            <h1 class="text-white text-4xl font-bold mb-4">
+                {{ primary_title }}
+            </h1>
+            <h3 class="text-white text-xl font-light max-w-2xl">
+                {{ secondary_title }}
+            </h3>
+        </div>
+        <div
+            class="flex flex-col md:flex-row justify-center mt-6 md:mt-16 gap-4"
+        >
+            {{ button_group }}
+            <button
+                class="button rounded-full
+                {{ if button_group_field == 'primary' }}
+                       bg-orange-500
+                   {{ else }}
+                       bg-white/20 border border-white/40 backdrop-blur-sm hover:bg-white/30
+                   {{ /if }}
+                 px-8 py-4 transition-all duration-200"
+            >
+                <a href="{{ entries_field:url }}"
+                   class="text-white text-sm md:text-md font-medium">
+                    {{ button_label }}
+                </a>
+            </button>
+            {{ /button_group }}
+        </div>
+    </div>
+</div>
