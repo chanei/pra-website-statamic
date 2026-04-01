@@ -1,0 +1,23 @@
+title: Contact
+fields:
+  -
+    handle: form
+    field:
+      max_items: 1
+      type: form
+      display: Form
+  -
+    handle: form_title
+    field:
+      type: text
+      display: 'Form Title'
+  -
+    handle: button_label
+    field:
+      type: text
+      display: 'Button Label'
+  -
+    handle: success_message
+    field:
+      type: text
+      display: 'Success message'

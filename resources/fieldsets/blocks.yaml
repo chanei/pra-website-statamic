@@ -46,3 +46,32 @@ fields:
                                 import: icon_cards
                 -
                   import: text_card
+            contact_us:
+              display: 'Contact us'
+              fields:
+                -
+                  handle: heading
+                  field:
+                    type: text
+                    display: Heading
+                -
+                  handle: sub_heading
+                  field:
+                    type: text
+                    display: 'Sub Heading'
+                -
+                  handle: contact_information
+                  field:
+                    type: replicator
+                    display: 'Contact Information'
+                    sets:
+                      new_set_group:
+                        display: 'New Set Group'
+                        sets:
+                          new_set:
+                            display: 'New Set'
+                            fields:
+                              -
+                                import: icon_cards
+                -
+                  import: contact

@@ -1,0 +1,24 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: name
+            field:
+              placeholder: 'Your Name'
+              type: text
+              display: Name
+          -
+            handle: email
+            field:
+              placeholder: 'Your Email'
+              type: text
+              display: Email
+          -
+            handle: message
+            field:
+              placeholder: 'Your Message'
+              type: textarea
+              display: Message

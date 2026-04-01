@@ -6,3 +6,10 @@ preferences:
   collections:
     pages:
       view: tree
+  forms:
+    contact_us:
+      columns:
+        - datestamp
+        - email
+        - message
+        - name
