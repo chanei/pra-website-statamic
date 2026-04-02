@@ -1,0 +1,31 @@
+title: 'Mission Vision'
+fields:
+  -
+    handle: mission_cards
+    field:
+      type: replicator
+      display: 'Mission Cards'
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            new_set:
+              display: 'New Set'
+              fields:
+                -
+                  handle: icon
+                  field:
+                    container: assets
+                    type: assets
+                    display: Icon
+                    max_files: 1
+                -
+                  handle: heading
+                  field:
+                    type: text
+                    display: Heading
+                -
+                  handle: sub_heading
+                  field:
+                    type: textarea
+                    display: 'Sub Heading'

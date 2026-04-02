@@ -4,7 +4,7 @@ blueprint: pages
 title: Home
 author: b3e81ce8-7344-482c-9ac6-415d9813424a
 updated_by: b3e81ce8-7344-482c-9ac6-415d9813424a
-updated_at: 1775144644
+updated_at: 1775146653
 blocks:
   -
     id: XlFziSH2I4DIIPdLxHF0_
@@ -41,12 +41,16 @@ blocks:
           -
             type: text
             text: 'Philanthropy Reform Alliance was founded on a simple belief: meaningful change happens when resources, ideas, and communities work together differently.'
+          -
+            type: hardBreak
       -
         type: paragraph
         content:
           -
             type: text
             text: 'Traditional philanthropy models often exclude the very communities they aim to serve. We exist to challenge that status quo by fostering collaboration, supporting bold ideas, and building platforms where local leadership drives sustainable impact.'
+          -
+            type: hardBreak
       -
         type: paragraph
         content:

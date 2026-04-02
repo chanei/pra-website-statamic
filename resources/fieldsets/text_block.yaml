@@ -1,0 +1,14 @@
+title: 'Text Block'
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+  -
+    handle: context
+    field:
+      container: assets
+      remove_empty_nodes: false
+      type: bard
+      display: Context

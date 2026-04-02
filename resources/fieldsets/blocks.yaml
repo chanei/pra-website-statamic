@@ -90,3 +90,13 @@ fields:
               fields:
                 -
                   import: programs
+            text_block:
+              display: 'Text Block'
+              fields:
+                -
+                  import: text_block
+            mission_vision:
+              display: 'Mission Vision'
+              fields:
+                -
+                  import: mission_vision
