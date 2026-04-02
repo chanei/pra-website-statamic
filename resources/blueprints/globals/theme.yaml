@@ -28,3 +28,10 @@ tabs:
             field:
               type: text
               display: Email
+          -
+            handle: footer_logo
+            field:
+              container: assets
+              max_files: 1
+              type: assets
+              display: 'Footer Logo'
