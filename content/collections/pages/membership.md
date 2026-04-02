@@ -4,7 +4,7 @@ blueprint: page
 title: Membership
 author: b3e81ce8-7344-482c-9ac6-415d9813424a
 updated_by: b3e81ce8-7344-482c-9ac6-415d9813424a
-updated_at: 1775156256
+updated_at: 1775158341
 blocks:
   -
     id: lwbz2ypfS7kwbm9zpQY5w
@@ -26,9 +26,10 @@ blocks:
     enabled: true
   -
     id: 5oi0fu_Tl75hH9-Ccpy_a
-    heading: 'Ready to join us'
+    heading: 'Ready to Make a Difference?'
     button_label: 'Become a member'
     button_link: '#'
     type: cta
     enabled: true
+    text: "Every moment counts. Join us today and be part of a movement that's changing lives through love and compassion."
 ---

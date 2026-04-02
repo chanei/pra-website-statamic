@@ -6,6 +6,11 @@ fields:
       type: text
       display: Heading
   -
+    handle: text
+    field:
+      type: text
+      display: Text
+  -
     handle: button_label
     field:
       type: text
