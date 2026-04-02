@@ -4,7 +4,7 @@
     <div class="mt-30">
         <h3 class="text-3xl font-bold mb-2">{{ heading }}</h3>
         <div class="mb-8 font-light">
-            {{ content | raw | bard_html }}
+            {{ content | markdown }}
         </div>
     </div>
     <div class="max-h-[600px] items-end">
