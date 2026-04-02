@@ -4,7 +4,7 @@ blueprint: pages
 title: Home
 author: b3e81ce8-7344-482c-9ac6-415d9813424a
 updated_by: b3e81ce8-7344-482c-9ac6-415d9813424a
-updated_at: 1775071675
+updated_at: 1775144644
 blocks:
   -
     id: XlFziSH2I4DIIPdLxHF0_
@@ -91,4 +91,37 @@ blocks:
     type: cards
     enabled: true
     heading: 'Our Core Values'
+  -
+    id: J7FUPqN7ea7RzOrWAJIHC
+    heading: 'Our Programs'
+    sub_heading: 'Our work bridges philanthropy, innovation, and social impact — creating ecosystems where generosity leads to measurable transformation'
+    image:
+      - landing/hero.jpg
+    section_items:
+      -
+        id: gE-mlRjyT9op3dYUCUhMs
+        number: '01'
+        title: 'Fellowship Program'
+        context: 'A leadership development initiative supporting emerging changemakers working at the intersection of philanthropy, policy, and community development.'
+        type: new_set
+        enabled: true
+        link: 'entry::48295ddc-8744-49cb-915d-f2371344a227'
+      -
+        id: 44w34kBlrkS_nYCkxpa87
+        number: '02'
+        title: 'Catalytic Seed Fund'
+        context: 'We provide early-stage funding to innovative ideas that have strong potential for community transformation but limited access to traditional funding.'
+        type: new_set
+        enabled: true
+      -
+        id: 1EE7GNU5BrAm-HLkcT9Zk
+        number: '03'
+        title: Roundtables
+        context: 'Curated conversations bringing together funders, practitioners, policymakers, and community leaders to rethink philanthropy practices'
+        type: new_set
+        enabled: true
+        link: 'entry::48295ddc-8744-49cb-915d-f2371344a227'
+    type: programs
+    enabled: true
+    program_image: landing/hero.jpg
 ---

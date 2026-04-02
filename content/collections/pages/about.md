@@ -4,14 +4,13 @@ blueprint: page
 title: About
 author: b3e81ce8-7344-482c-9ac6-415d9813424a
 updated_by: b3e81ce8-7344-482c-9ac6-415d9813424a
-updated_at: 1775139580
+updated_at: 1775140851
 blocks:
   -
     id: u7AgkEly5sk3r4_7SX464
     heading: 'About Us'
     type: page_intro
     enabled: true
-    sub_heading: 'Details of Organization'
   -
     id: wrPQO06dvZBljPfB32Dgw
     heading: 'Our Core Values'
@@ -35,7 +34,12 @@ blocks:
         sub_heading: 'We embrace creativity and bold ideas to drive transformative change'
         type: new_set
         enabled: true
+      -
+        id: W-hro9Ye4Ut-FNrT5gf-t
+        heading: Accountability
+        sub_heading: 'We are committed to transparency, learning, and continuous improvement in all we do'
+        type: new_set
+        enabled: true
     type: cards
     enabled: true
-    text: '"The smallest act of love can change the biggest story."'
 ---

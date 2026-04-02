@@ -85,3 +85,8 @@ fields:
               fields:
                 -
                   import: blog_listing
+            programs:
+              display: Programs
+              fields:
+                -
+                  import: programs
