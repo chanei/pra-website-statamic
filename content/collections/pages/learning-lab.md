@@ -4,5 +4,17 @@ blueprint: page
 title: 'Learning Lab'
 author: b3e81ce8-7344-482c-9ac6-415d9813424a
 updated_by: b3e81ce8-7344-482c-9ac6-415d9813424a
-updated_at: 1775042202
+updated_at: 1775138094
+blocks:
+  -
+    id: Wa_MoqBOOARvmO7PXFUxB
+    heading: 'Learning Lab'
+    sub_heading: 'Insights, stories, and updates from the world of philanthropy reform. Explore our latest articles and thought leadership pieces.'
+    type: page_intro
+    enabled: true
+  -
+    id: KG5MFjQ7bsMBVN9bGPauY
+    limit: 9
+    type: blog_listing
+    enabled: true
 ---

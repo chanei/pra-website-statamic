@@ -1,0 +1,20 @@
+---
+id: 0290ca7e-8782-488a-9705-ef8f9c99ca79
+blueprint: blog
+title: 'Discover the emerging trends shaping the future of philanthropy, from impact investing to community-led initiatives.'
+author: b3e81ce8-7344-482c-9ac6-415d9813424a
+updated_by: b3e81ce8-7344-482c-9ac6-415d9813424a
+updated_at: 1775128766
+excerpt: 'Explore inspiring stories of local leaders in Uganda who are transforming their communities through innovative philanthropic approaches.'
+featured_image:
+  - landing/story.jpeg
+content:
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
+    content:
+      -
+        type: text
+        text: 'Explore inspiring stories of local leaders in Uganda who are transforming their communities through innovative philanthropic approaches.'
+---

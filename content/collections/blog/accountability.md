@@ -1,0 +1,17 @@
+---
+id: 4137f516-a71b-4dcc-ae98-a3d52fa9bdbd
+blueprint: blog
+title: Accountability
+excerpt: 'We are committed to transparency, learning, and continuous improvement in all we do'
+featured_image:
+  - landing/story.jpeg
+updated_by: b3e81ce8-7344-482c-9ac6-415d9813424a
+updated_at: 1775139659
+content:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'We are committed to transparency, learning, and continuous improvement in all we do'
+---

@@ -1,0 +1,20 @@
+---
+id: af534419-5118-4c55-878b-428bcfcc60ea
+blueprint: blog
+title: 'The Future of Philanthropy: Trends to Watch in 2024'
+author: b3e81ce8-7344-482c-9ac6-415d9813424a
+updated_by: b3e81ce8-7344-482c-9ac6-415d9813424a
+updated_at: 1775130999
+excerpt: 'Discover the emerging trends shaping the future of philanthropy, from impact investing to community-led initiatives.'
+featured_image:
+  - landing/hero.jpg
+content:
+  -
+    type: paragraph
+    attrs:
+      textAlign: left
+    content:
+      -
+        type: text
+        text: 'Discover the emerging trends shaping the future of philanthropy, from impact investing to community-led initiatives.'
+---

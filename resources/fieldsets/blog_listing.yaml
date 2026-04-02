@@ -1,0 +1,8 @@
+title: 'Blog Listing'
+fields:
+  -
+    handle: limit
+    field:
+      type: integer
+      default: 9
+      display: 'Number of posts'

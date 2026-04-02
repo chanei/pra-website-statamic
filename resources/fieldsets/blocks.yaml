@@ -75,3 +75,13 @@ fields:
                                 import: icon_cards
                 -
                   import: contact
+            page_intro:
+              display: 'Page Intro'
+              fields:
+                -
+                  import: page_intro
+            blog_listing:
+              display: 'Blog Listing'
+              fields:
+                -
+                  import: blog_listing
