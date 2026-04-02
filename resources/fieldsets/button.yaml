@@ -12,6 +12,7 @@ fields:
         - pages
       type: entries
       display: 'Entries Field'
+      max_items: 1
   -
     handle: button_group_field
     field:

@@ -100,3 +100,13 @@ fields:
               fields:
                 -
                   import: mission_vision
+            partners:
+              display: Partners
+              fields:
+                -
+                  import: partners
+            cta:
+              display: Cta
+              fields:
+                -
+                  import: cta

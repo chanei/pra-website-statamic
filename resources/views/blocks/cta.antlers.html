@@ -1,0 +1,17 @@
+<div class="px-6 md:px-14 lg:px-20 py-24">
+    <div class="max-w-3xl mx-auto text-center">
+        {{ if heading }}
+        <h2 class="text-3xl font-bold mb-6">
+            {{ heading }}
+        </h2>
+        {{ /if }}
+        <a
+            href="{{ button_link }}"
+            target="_blank"
+            rel="noopener"
+            class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-medium px-8 py-3 rounded-full transition"
+        >
+            {{ button_label }}
+        </a>
+    </div>
+</div>

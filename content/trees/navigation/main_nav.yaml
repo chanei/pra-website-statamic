@@ -18,9 +18,9 @@ tree:
       -
         id: c47c5225-e44b-4346-a8d0-65793116c519
         entry: 5a9195e1-5d32-4a6b-8850-e0bc82b64c2b
-      -
-        id: 9700e2fb-fda7-47ab-aa53-b96857deac58
-        entry: c84ad6ba-3ad0-40c2-a87c-2434768dc47e
+  -
+    id: 9700e2fb-fda7-47ab-aa53-b96857deac58
+    entry: c84ad6ba-3ad0-40c2-a87c-2434768dc47e
   -
     id: f6968eaa-c432-487b-8b23-7c0626a80a4c
     entry: d447df37-970a-4677-a82d-067140c36c3b

@@ -1,0 +1,17 @@
+title: Cta
+fields:
+  -
+    handle: heading
+    field:
+      type: text
+      display: Heading
+  -
+    handle: button_label
+    field:
+      type: text
+      display: 'Button Label'
+  -
+    handle: button_link
+    field:
+      type: link
+      display: 'Button Link'

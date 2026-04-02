@@ -4,7 +4,7 @@ blueprint: pages
 title: Home
 author: b3e81ce8-7344-482c-9ac6-415d9813424a
 updated_by: b3e81ce8-7344-482c-9ac6-415d9813424a
-updated_at: 1775146653
+updated_at: 1775156886
 blocks:
   -
     id: XlFziSH2I4DIIPdLxHF0_
@@ -18,16 +18,14 @@ blocks:
       -
         id: 9cz_OW_JbQS2lJOqYEnTg
         button_label: 'Become a Member'
-        entries_field:
-          - c84ad6ba-3ad0-40c2-a87c-2434768dc47e
+        entries_field: c84ad6ba-3ad0-40c2-a87c-2434768dc47e
         button_group_field: primary
         type: new_set
         enabled: true
       -
         id: IkAzEkKtv_dKmKLL-B91Q
-        button_label: 'Explore Our Programs'
-        entries_field:
-          - 281e942c-f945-4ce2-b274-f184abdc1981
+        button_label: 'Become a partner'
+        entries_field: 0c257825-8070-41f1-8f99-2c125204772d
         button_group_field: secondary
         type: new_set
         enabled: true
@@ -128,4 +126,45 @@ blocks:
     type: programs
     enabled: true
     program_image: landing/hero.jpg
+  -
+    id: KvDE_1NXUaw0eWyAuzfiq
+    heading: 'Our Partners'
+    type: partners
+    enabled: true
+    partners:
+      -
+        id: PKWVsqKPVB633O7DeslLS
+        partner_name: who
+        logo: landing/who.png
+        website_url: '#'
+        type: new_set
+        enabled: true
+      -
+        id: JFbrRoBW3L8ri7OKEWEZA
+        partner_name: who
+        logo: landing/who.png
+        website_url: '#'
+        type: new_set
+        enabled: true
+      -
+        id: H8WpasmcmYQP1_nxh8HpB
+        partner_name: who
+        logo: landing/who.png
+        website_url: '#'
+        type: new_set
+        enabled: true
+      -
+        id: I5Cn0U7oKr2EZ5mvHGGLh
+        partner_name: who
+        logo: landing/who.png
+        website_url: '#'
+        type: new_set
+        enabled: true
+      -
+        id: Z4F4nAGDd3Z1ASdky_k_h
+        partner_name: who
+        logo: landing/who.png
+        website_url: '#'
+        type: new_set
+        enabled: true
 ---
