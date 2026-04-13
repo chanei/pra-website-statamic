@@ -4,7 +4,7 @@ blueprint: pages
 title: Home
 author: b3e81ce8-7344-482c-9ac6-415d9813424a
 updated_by: b3e81ce8-7344-482c-9ac6-415d9813424a
-updated_at: 1775156886
+updated_at: 1776099918
 blocks:
   -
     id: XlFziSH2I4DIIPdLxHF0_
@@ -59,73 +59,88 @@ blocks:
     type: text_and_image
     enabled: true
   -
-    id: 8TRzkjb0K8xf7HwMKQ6kF
+    id: 454v3e9bSknAQaMelc6CC
+    title: 'Our Reach'
     cards:
       -
-        id: zomgV_3vqLCd9wrna5d1g
-        icon: landing/collaboration.png
-        heading: Collaboration
-        sub_heading: 'Together we create lasting change and hope'
+        id: tEAiEAt84yuOywFHtlnMJ
+        number: '1200'
+        heading: Members
+        sub_heading: 'People who make change possible'
         type: new_set
         enabled: true
       -
-        id: G5s-bEktBCgFV1U5VkChR
-        icon: landing/equity.png
-        heading: Equity
-        sub_heading: 'We believe in a just and inclusive world where everyone has the opportunity to thrive'
+        id: mvmQHvmLD0CJj8q4jB2Om
+        number: '340'
+        heading: Events
+        sub_heading: 'Community gatherings held to date'
         type: new_set
         enabled: true
       -
-        id: PqqBBZV6TxlY3GJ2tYTz6
-        icon: landing/innovation.png
-        heading: Innovation
-        sub_heading: 'We embrace creativity and bold ideas to drive transformative change'
+        id: 3EGNm1HO0EO5MAGc7Dcyi
+        number: '85'
+        heading: Publications
+        sub_heading: 'Research and reports published'
         type: new_set
         enabled: true
-      -
-        id: 61seqPMguaIC4dcVjSYrX
-        icon: landing/accountability.png
-        heading: Accountability
-        sub_heading: 'We are committed to transparency, learning, and continuous improvement in all we do'
-        type: new_set
-        enabled: true
-    text: '"The smallest act of love can change the biggest story."'
-    type: cards
+    type: counter_cards
     enabled: true
-    heading: 'Our Core Values'
   -
     id: J7FUPqN7ea7RzOrWAJIHC
-    heading: 'Our Programs'
-    sub_heading: 'Our work bridges philanthropy, innovation, and social impact — creating ecosystems where generosity leads to measurable transformation'
+    heading: 'What we do'
+    sub_heading: 'We advance equitable development through collaborative learning, critical dialogue, and collective action.'
     image:
       - landing/hero.jpg
     section_items:
       -
         id: gE-mlRjyT9op3dYUCUhMs
         number: '01'
-        title: 'Fellowship Program'
-        context: 'A leadership development initiative supporting emerging changemakers working at the intersection of philanthropy, policy, and community development.'
+        title: 'Collaborative Unlearning Lab'
+        context: 'A space to question assumptions and rethink development practices together.'
         type: new_set
         enabled: true
         link: 'entry::48295ddc-8744-49cb-915d-f2371344a227'
       -
         id: 44w34kBlrkS_nYCkxpa87
         number: '02'
-        title: 'Catalytic Seed Fund'
-        context: 'We provide early-stage funding to innovative ideas that have strong potential for community transformation but limited access to traditional funding.'
+        title: 'Conversations for change'
+        context: 'Facilitating dialogue that challenges systems and sparks transformative ideas.'
         type: new_set
         enabled: true
+        link: 'entry::5a9195e1-5d32-4a6b-8850-e0bc82b64c2b'
+      -
+        id: MMTA7nOSKiU-BsJul_j3a
+        number: '03'
+        title: 'Research & learning'
+        link: 'entry::ce8bf7ab-ac92-443c-b7a0-13ff61c67ba1'
+        type: new_set
+        enabled: true
+        context: 'Generating insights that inform more equitable and effective development.'
       -
         id: 1EE7GNU5BrAm-HLkcT9Zk
-        number: '03'
-        title: Roundtables
-        context: 'Curated conversations bringing together funders, practitioners, policymakers, and community leaders to rethink philanthropy practices'
+        number: '04'
+        title: 'Collaborative action fund'
+        context: 'Supporting collective initiatives that drive meaningful, systemic change.'
         type: new_set
         enabled: true
-        link: 'entry::48295ddc-8744-49cb-915d-f2371344a227'
+        link: 'entry::061112ff-1341-4166-b2a3-5ab8f3e3b571'
     type: programs
     enabled: true
     program_image: landing/hero.jpg
+  -
+    id: mI5_uB-ysZ7n35nmxI01T
+    heading: 'Latest Articles'
+    limit: 3
+    type: latest_blogs
+    enabled: true
+  -
+    id: SAcALYIKLzqPx5Xsnttjr
+    heading: 'Support our work'
+    text: 'Your contribution funds research, events and community programmes.'
+    button_label: 'Donate now'
+    button_link: 'entry::9d62c829-7ce6-4a53-8e33-4e00e7533223'
+    type: cta
+    enabled: true
   -
     id: KvDE_1NXUaw0eWyAuzfiq
     heading: 'Our Partners'
