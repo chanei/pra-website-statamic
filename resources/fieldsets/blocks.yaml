@@ -140,3 +140,8 @@ fields:
               fields:
                 -
                   import: feature_list
+            action_cards:
+              display: 'Action Cards'
+              fields:
+                -
+                  import: action_cards

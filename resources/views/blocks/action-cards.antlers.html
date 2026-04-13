@@ -1,0 +1,27 @@
+<div class="flex flex-col px-6 md:px-14 lg:px-20 py-20 bg-gray-50">
+    <div class="flex flex-col items-center mb-14">
+        <h2 class="text-3xl font-bold text-center mb-4">
+            {{ heading }}
+        </h2>
+        <div class="flex items-center gap-2">
+            <div class="h-[2px] w-12 bg-orange-300 rounded-full"></div>
+            <div class="h-[3px] w-6 bg-orange-500 rounded-full"></div>
+            <div class="h-[2px] w-12 bg-orange-300 rounded-full"></div>
+        </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {{ action_cards }}
+        <div class="flex flex-col items-center text-center bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition">
+            <div class="text-orange-500 font-bold text-2xl mb-4">
+                {{ title }}
+            </div>
+            <p class="text-gray-600 leading-relaxed mb-6">
+                {{ description }}
+            </p>
+            <a href="{{ link }}" class="px-6 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition">
+                {{ button_label }}
+            </a>
+        </div>
+        {{ /action_cards }}
+    </div>
+</div>
