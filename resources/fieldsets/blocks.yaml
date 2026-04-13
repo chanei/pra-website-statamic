@@ -110,3 +110,33 @@ fields:
               fields:
                 -
                   import: cta
+            counter_cards:
+              display: 'Counter Cards'
+              fields:
+                -
+                  import: counter_cards
+            latest_blogs:
+              display: 'Latest Blogs'
+              fields:
+                -
+                  handle: heading
+                  field:
+                    type: text
+                    display: Heading
+                -
+                  import: blog_listing
+            team_members:
+              display: 'Team Members'
+              fields:
+                -
+                  import: team
+            process_steps:
+              display: 'Process Steps'
+              fields:
+                -
+                  import: process_steps
+            feature_list:
+              display: 'Feature List'
+              fields:
+                -
+                  import: feature_list
