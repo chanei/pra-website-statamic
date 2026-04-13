@@ -1,0 +1,29 @@
+title: 'Process Steps'
+fields:
+  -
+    handle: heading
+    field:
+      type: text
+      display: Heading
+  -
+    handle: numbered_steps
+    field:
+      type: replicator
+      display: 'Numbered Steps'
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            new_set:
+              display: 'New Set'
+              fields:
+                -
+                  handle: title
+                  field:
+                    type: text
+                    display: Title
+                -
+                  handle: description
+                  field:
+                    type: textarea
+                    display: Description

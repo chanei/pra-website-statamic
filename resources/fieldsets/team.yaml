@@ -1,0 +1,41 @@
+title: 'Team Members'
+fields:
+  -
+    handle: heading
+    field:
+      type: text
+      display: Heading
+  -
+    handle: team_members
+    field:
+      type: replicator
+      display: 'Team Members'
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            new_set:
+              display: 'New Set'
+              fields:
+                -
+                  handle: image
+                  field:
+                    container: assets
+                    max_files: 1
+                    type: assets
+                    display: Image
+                -
+                  handle: name
+                  field:
+                    type: text
+                    display: Name
+                -
+                  handle: position
+                  field:
+                    type: text
+                    display: Position
+                -
+                  handle: description
+                  field:
+                    type: text
+                    display: Description

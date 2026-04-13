@@ -1,0 +1,35 @@
+title: 'Counter Cards'
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+  -
+    handle: cards
+    field:
+      max_sets: 3
+      type: replicator
+      display: Cards
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            new_set:
+              display: 'New Set'
+              fields:
+                -
+                  handle: number
+                  field:
+                    type: text
+                    display: Number
+                -
+                  handle: heading
+                  field:
+                    type: text
+                    display: Heading
+                -
+                  handle: sub_heading
+                  field:
+                    type: text
+                    display: 'Sub Heading'

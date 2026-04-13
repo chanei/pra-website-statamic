@@ -1,0 +1,51 @@
+<div class="flex flex-col px-6 md:px-14 lg:px-20 py-24 bg-white">
+    <div class="flex flex-col items-center mb-16">
+        <h1 class="text-3xl text-center font-bold mb-4">{{ title }}</h1>
+        <div class="flex items-center gap-2">
+            <div class="h-[2px] w-12 bg-orange-300 rounded-full"></div>
+            <div class="h-[3px] w-6 bg-orange-500 rounded-full"></div>
+            <div class="h-[2px] w-12 bg-orange-300 rounded-full"></div>
+        </div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+        {{ cards }}
+        <div class="flex flex-col items-center justify-center bg-white shadow-lg rounded-2xl p-10 border-t-4 border-orange-400">
+            <span class="text-5xl font-bold text-orange-400 mb-3" data-count="{{ number }}">0</span>
+            <h2 class="text-lg font-bold mb-1">{{ heading }}</h2>
+            <p class="text-center text-sm font-light text-gray-500">{{ sub_heading }}</p>
+        </div>
+        {{ /cards }}
+    </div>
+</div>
+<script>
+        const counters = document.querySelectorAll('[data-count]');
+        const speed = 2000;
+
+        const animate = (el) => {
+            const target = +el.getAttribute('data-count');
+            const step = target / (speed / 16);
+            let current = 0;
+
+            const update = () => {
+                current += step;
+                if (current < target) {
+                    el.textContent = Math.ceil(current).toLocaleString();
+                    requestAnimationFrame(update);
+                } else {
+                    el.textContent = target.toLocaleString();
+                }
+            };
+            update();
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animate(entry.target);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        counters.forEach(counter => observer.observe(counter));
+</script>
