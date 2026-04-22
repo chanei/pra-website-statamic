@@ -1,9 +1,9 @@
-title: 'Contact Us'
+title: Newsletter
 honeypot: honeypot
 store: true
 email:
   -
     to: info@philanthropyreformalliance.org
     from: noreply@philanthropyreformalliance.org
-    subject: New Contact Us Message
+    subject: New Newsletter Signup
     markdown: true

@@ -1,0 +1,56 @@
+title: 'Videos & Event Recording'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              display: Title
+          -
+            handle: description
+            field:
+              type: textarea
+              display: Description
+          -
+            handle: video_url
+            field:
+              input_type: url
+              type: text
+              display: 'Video url'
+          -
+            handle: thumbnail
+            field:
+              container: assets
+              max_files: 1
+              type: assets
+              display: Thumbnail
+          -
+            handle: event_date
+            field:
+              type: date
+              display: 'Event Date'
+          -
+            handle: duration
+            field:
+              type: text
+              display: Duration
+              instructions: 'e.g 45 mins'
+              instructions_position: below
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

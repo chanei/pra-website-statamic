@@ -145,3 +145,8 @@ fields:
               fields:
                 -
                   import: action_cards
+            collection_listing:
+              display: 'Collection Listing'
+              fields:
+                -
+                  import: collection_listing

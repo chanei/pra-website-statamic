@@ -1,0 +1,79 @@
+title: 'Publications & Toolkit'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              display: Title
+          -
+            handle: content
+            field:
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+                - h1
+                - h4
+                - h5
+                - h6
+              container: assets
+              remove_empty_nodes: false
+              type: bard
+              display: Content
+          -
+            handle: publication_date
+            field:
+              type: date
+              display: 'Publication Date'
+          -
+            handle: cover_image
+            field:
+              container: assets
+              max_files: 1
+              type: assets
+              display: 'Cover Image'
+          -
+            handle: download_file
+            field:
+              container: assets
+              max_files: 1
+              type: assets
+              display: 'Download File'
+          -
+            handle: external_url
+            field:
+              input_type: url
+              type: text
+              display: 'External Url'
+          -
+            handle: authors
+            field:
+              type: text
+              display: Authors
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

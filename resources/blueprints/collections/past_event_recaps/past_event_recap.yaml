@@ -1,0 +1,47 @@
+title: 'Past Event Recap'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              display: Title
+          -
+            handle: content
+            field:
+              container: assets
+              remove_empty_nodes: false
+              type: bard
+              display: Content
+          -
+            handle: featured_image
+            field:
+              container: assets
+              max_files: 1
+              type: assets
+              display: 'Featured Image'
+          -
+            handle: event_link
+            field:
+              collections:
+                - upcoming_events
+              type: link
+              display: 'Event Link'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

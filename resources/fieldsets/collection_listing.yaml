@@ -1,0 +1,31 @@
+title: 'Collection Listing'
+fields:
+  -
+    handle: limit
+    field:
+      type: integer
+      display: 'Number of posts per page'
+  -
+    handle: collection
+    field:
+      options:
+        -
+          key: blog
+          value: Blog
+        -
+          key: past_event_recaps
+          value: 'Past Event Recaps'
+        -
+          key: publications_toolkits
+          value: 'Publications & Toolkits'
+        -
+          key: upcoming_events
+          value: 'Upcoming Events'
+        -
+          key: videos_event_recordings
+          value: 'Videos & Event Recordings'
+        -
+          key: lessons_learned
+          value: 'Lessons Learned'
+      type: select
+      display: Collection

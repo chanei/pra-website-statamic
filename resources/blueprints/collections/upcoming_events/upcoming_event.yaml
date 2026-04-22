@@ -1,0 +1,55 @@
+title: 'Upcoming Event'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              display: Title
+          -
+            handle: start_date
+            field:
+              type: date
+              display: 'Start Date'
+          -
+            handle: end_date
+            field:
+              type: date
+              display: 'End Date'
+          -
+            handle: time
+            field:
+              type: text
+              display: Time
+          -
+            handle: featured_image
+            field:
+              container: assets
+              max_files: 1
+              type: assets
+              display: 'Featured Image'
+          -
+            handle: content
+            field:
+              container: assets
+              remove_empty_nodes: false
+              type: bard
+              display: Content
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

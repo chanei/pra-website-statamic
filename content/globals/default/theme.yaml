@@ -6,3 +6,46 @@ address: |-
 phone_number: '+256 700 000 000'
 email: info@philanthropyreform.org
 footer_logo: landing/footer_logo.png
+social_links:
+  -
+    id: l1-_R20rcrHxsBf26nPDs
+    platform: facebook
+    url: '#'
+    type: new_set
+    enabled: true
+  -
+    id: RCSorz3XGdVrNQB3mkR2s
+    platform: twitter
+    url: '#'
+    type: new_set
+    enabled: true
+  -
+    id: nd4nKuBRHHJ7-odxd8C_Z
+    platform: linkedin
+    url: '#'
+    type: new_set
+    enabled: true
+  -
+    id: XSYwOBLkc8pMrClKbz5N6
+    platform: instagram
+    url: '#'
+    type: new_set
+    enabled: true
+  -
+    id: r7YqwSO8Z-6D3A1b_LPSC
+    platform: youtube
+    url: '#'
+    type: new_set
+    enabled: true
+  -
+    id: JZRaCs8u4iaZYgtT6g7lD
+    platform: tiktok
+    url: '#'
+    type: new_set
+    enabled: true
+  -
+    id: 3KSUfS19GrQ5TxH0IZN-4
+    platform: whatsapp
+    url: '#'
+    type: new_set
+    enabled: true

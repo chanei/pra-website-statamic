@@ -5,4 +5,4 @@ fields:
     field:
       type: integer
       default: 9
-      display: 'Number of posts'
+      display: 'Number of posts per page'

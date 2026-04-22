@@ -8,6 +8,26 @@ preferences:
       view: tree
     blog:
       view: list
+    listing_mode: list
+    publications_toolkits:
+      view: list
+      columns:
+        - title
+        - slug
+        - status
+        - publication_date
+    upcoming_events:
+      view: list
+      columns:
+        - title
+        - slug
+        - status
+        - start_date
+        - end_date
+    past_event_recaps:
+      view: list
+    videos_event_recordings:
+      view: list
   forms:
     contact_us:
       columns:
@@ -15,3 +35,7 @@ preferences:
         - email
         - message
         - name
+    newsletter:
+      columns:
+        - datestamp
+        - email

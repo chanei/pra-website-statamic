@@ -35,3 +35,48 @@ tabs:
               max_files: 1
               type: assets
               display: 'Footer Logo'
+          -
+            handle: social_links
+            field:
+              type: replicator
+              display: 'Social Links'
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: platform
+                          field:
+                            options:
+                              -
+                                key: facebook
+                                value: Facebook
+                              -
+                                key: twitter
+                                value: 'Twitter (X)'
+                              -
+                                key: instagram
+                                value: Instagram
+                              -
+                                key: linkedin
+                                value: LinkedIn
+                              -
+                                key: youtube
+                                value: Youtube
+                              -
+                                key: tiktok
+                                value: Tiktok
+                              -
+                                key: whatsapp
+                                value: Whatsapp
+                            type: select
+                            display: Platform
+                        -
+                          handle: url
+                          field:
+                            input_type: url
+                            type: text
+                            display: Url
