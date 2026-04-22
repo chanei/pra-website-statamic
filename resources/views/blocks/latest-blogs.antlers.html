@@ -10,7 +10,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {{ collection:blog limit="{limit}" sort="date:desc" paginate="true" as="posts" }}
             {{ posts }}
-                {{ partial:components/blog-card }}
+                {{ partial:components/blog_card }}
             {{ /posts }}
         {{ /collection:blog }}
     </div>

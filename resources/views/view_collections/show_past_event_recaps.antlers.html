@@ -1,0 +1,21 @@
+<article class="px-6 md:px-14 lg:px-20 py-16">
+    <div class="max-w-3xl mx-auto">
+
+        {{ featured_image }}
+            <img src="{{ url }}" class="w-full mb-6" />
+        {{ /featured_image }}
+
+        <h1 class="text-4xl font-bold mb-4">{{ title }}</h1>
+
+        {{ if event_link }}
+            <a href="{{ event_link:url }}" target="_blank" class="text-orange-500 underline mb-6 inline-block">
+                View Related Event →
+            </a>
+        {{ /if }}
+
+        <div class="prose max-w-none">
+            {{ content }}
+        </div>
+
+    </div>
+</article>

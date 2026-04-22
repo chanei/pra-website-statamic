@@ -100,6 +100,171 @@
         </div>
     </div>
 
+    <div class="flex flex-col px-6 md:px-14 lg:px-20 py-24">
+        <h1 class="text-3xl text-center font-bold mb-16">Our Impact in Numbers</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            <div class="flex flex-col items-center justify-center bg-white shadow-lg rounded-2xl p-10">
+                <span class="text-5xl font-bold text-orange-400 mb-3" data-count="1200">0</span>
+                <h2 class="text-lg font-bold mb-1">Members</h2>
+                <p class="text-center text-sm font-light text-gray-500">People who make change possible</p>
+            </div>
+
+            <div class="flex flex-col items-center justify-center bg-white shadow-lg rounded-2xl p-10">
+                <span class="text-5xl font-bold text-orange-400 mb-3" data-count="340">0</span>
+                <h2 class="text-lg font-bold mb-1">Events</h2>
+                <p class="text-center text-sm font-light text-gray-500">Community gatherings held to date</p>
+            </div>
+
+            <div class="flex flex-col items-center justify-center bg-white shadow-lg rounded-2xl p-10">
+                <span class="text-5xl font-bold text-orange-400 mb-3" data-count="85">0</span>
+                <h2 class="text-lg font-bold mb-1">Publications</h2>
+                <p class="text-center text-sm font-light text-gray-500">Research and reports published</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const counters = document.querySelectorAll('[data-count]');
+        const speed = 2000;
+
+        const animate = (el) => {
+            const target = +el.getAttribute('data-count');
+            const step = target / (speed / 16);
+            let current = 0;
+
+            const update = () => {
+                current += step;
+                if (current < target) {
+                    el.textContent = Math.ceil(current).toLocaleString();
+                    requestAnimationFrame(update);
+                } else {
+                    el.textContent = target.toLocaleString();
+                }
+            };
+            update();
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animate(entry.target);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        counters.forEach(counter => observer.observe(counter));
+    </script>
+
+    <div class="flex flex-col px-6 md:px-14 lg:px-20 pb-24 pt-10 bg-gray-50">
+
+        <!-- Heading -->
+        <div class="flex flex-col items-center mb-16">
+            <h1 class="text-3xl text-center font-bold mb-4">
+                Our Approach
+            </h1>
+            <div class="flex items-center gap-2">
+                <div class="h-[2px] w-12 bg-orange-300 rounded-full"></div>
+                <div class="h-[3px] w-6 bg-orange-500 rounded-full"></div>
+                <div class="h-[2px] w-12 bg-orange-300 rounded-full"></div>
+            </div>
+        </div>
+
+        <!-- Steps -->
+        <div class="flex flex-wrap justify-center gap-8">
+
+            <div class="w-full sm:w-[45%] lg:w-[22%] max-w-sm flex flex-col items-center text-center p-6">
+                <div class="text-orange-500 font-bold text-3xl mb-4">01</div>
+                <h3 class="text-lg font-semibold mb-3">Unlearn</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                    Question dominant narratives and rethink assumptions in development practice.
+                </p>
+            </div>
+
+            <div class="w-full sm:w-[45%] lg:w-[22%] max-w-sm flex flex-col items-center text-center p-6">
+                <div class="text-orange-500 font-bold text-3xl mb-4">02</div>
+                <h3 class="text-lg font-semibold mb-3">Reflect</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                    Create honest spaces for practitioners to examine contradictions and challenges.
+                </p>
+            </div>
+
+            <div class="w-full sm:w-[45%] lg:w-[22%] max-w-sm flex flex-col items-center text-center p-6">
+                <div class="text-orange-500 font-bold text-3xl mb-4">03</div>
+                <h3 class="text-lg font-semibold mb-3">Collaborate</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                    Engage diverse actors as equal partners in shaping development solutions.
+                </p>
+            </div>
+
+            <div class="w-full sm:w-[45%] lg:w-[22%] max-w-sm flex flex-col items-center text-center p-6">
+                <div class="text-orange-500 font-bold text-3xl mb-4">04</div>
+                <h3 class="text-lg font-semibold mb-3">Act</h3>
+                <p class="text-sm text-gray-600 leading-relaxed">
+                    Support collective initiatives that lead to meaningful, systemic change.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="flex flex-col px-6 md:px-14 lg:px-20 pb-24 pt-10 bg-white">
+
+        <!-- Heading -->
+        <div class="flex flex-col items-center mb-16">
+            <h1 class="text-3xl text-center font-bold mb-4">
+                Our Team
+            </h1>
+            <div class="flex items-center gap-2">
+                <div class="h-[2px] w-12 bg-orange-300 rounded-full"></div>
+                <div class="h-[3px] w-6 bg-orange-500 rounded-full"></div>
+                <div class="h-[2px] w-12 bg-orange-300 rounded-full"></div>
+            </div>
+        </div>
+
+        <!-- Team Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+            <!-- Member -->
+            <div class="flex flex-col items-center text-center">
+                <div class="w-32 h-32 rounded-full overflow-hidden mb-4 shadow-md">
+                    <img src="/images/team1.jpg" class="w-full h-full object-cover" />
+                </div>
+                <h3 class="text-lg font-semibold">Jane Doe</h3>
+                <p class="text-orange-500 text-sm mb-3">Executive Director</p>
+                <p class="text-sm text-gray-600 leading-relaxed max-w-xs">
+                    Leads strategic direction and partnerships with a focus on equitable development.
+                </p>
+            </div>
+
+            <!-- Member -->
+            <div class="flex flex-col items-center text-center">
+                <div class="w-32 h-32 rounded-full overflow-hidden mb-4 shadow-md">
+                    <img src="/images/team2.jpg" class="w-full h-full object-cover" />
+                </div>
+                <h3 class="text-lg font-semibold">John Smith</h3>
+                <p class="text-orange-500 text-sm mb-3">Research Lead</p>
+                <p class="text-sm text-gray-600 leading-relaxed max-w-xs">
+                    Drives research initiatives and knowledge generation across programs.
+                </p>
+            </div>
+
+            <!-- Member -->
+            <div class="flex flex-col items-center text-center">
+                <div class="w-32 h-32 rounded-full overflow-hidden mb-4 shadow-md">
+                    <img src="/images/team3.jpg" class="w-full h-full object-cover" />
+                </div>
+                <h3 class="text-lg font-semibold">Amina K.</h3>
+                <p class="text-orange-500 text-sm mb-3">Community Engagement</p>
+                <p class="text-sm text-gray-600 leading-relaxed max-w-xs">
+                    Facilitates collaboration and dialogue with community partners.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
     <div class="flex flex-col md:flex-row gap-12 px-6 md:px-14 lg:px-20 pt-20 mb-20">
         <div class="flex w-full md:w-[45%] max-h-[600px]">
             <div class="w-full h-[600px] relative rounded-xl overflow-hidden">
@@ -164,6 +329,56 @@
         </div>
     </div>
 
+    <div class="flex flex-col px-6 md:px-14 lg:px-20 py-16 bg-white">
+
+        <!-- Heading -->
+        <div class="flex flex-col items-center mb-12">
+            <h2 class="text-2xl md:text-3xl text-center font-bold mb-4">
+                Why Partner with PRA
+            </h2>
+
+            <div class="flex items-center gap-2">
+                <div class="h-[2px] w-12 bg-orange-300 rounded-full"></div>
+                <div class="h-[3px] w-6 bg-orange-500 rounded-full"></div>
+                <div class="h-[2px] w-12 bg-orange-300 rounded-full"></div>
+            </div>
+        </div>
+
+        <!-- List -->
+        <div class="max-w-3xl mx-auto space-y-6">
+
+            <div class="flex items-start gap-4">
+                <div class="mt-2 h-2 w-2 bg-orange-500 rounded-full shrink-0"></div>
+                <p class="text-gray-700 leading-relaxed">
+                    Collaborate on flagship initiatives like the Collaborative Unlearning Lab.
+                </p>
+            </div>
+
+            <div class="flex items-start gap-4">
+                <div class="mt-2 h-2 w-2 bg-orange-500 rounded-full shrink-0"></div>
+                <p class="text-gray-700 leading-relaxed">
+                    Co-design tools and frameworks to surface and shift power in systems.
+                </p>
+            </div>
+
+            <div class="flex items-start gap-4">
+                <div class="mt-2 h-2 w-2 bg-orange-500 rounded-full shrink-0"></div>
+                <p class="text-gray-700 leading-relaxed">
+                    Participate in facilitated dialogues and roundtables that surface hidden dynamics and drive shared learning.
+                </p>
+            </div>
+
+            <div class="flex items-start gap-4">
+                <div class="mt-2 h-2 w-2 bg-orange-500 rounded-full shrink-0"></div>
+                <p class="text-gray-700 leading-relaxed">
+                    Influence cross-sector change while strengthening your own institutional practice.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
     {{-- Our story section --}}
     <div class="flex flex-col bg-white px-6 md:px-14 lg:px-20 py-20">
         <h3 class="text-3xl font-bold mb-6">Our Story</h3>
@@ -219,6 +434,126 @@
 
         </div>
     </div>
+
+    {{-- action cards --}}
+    <div class="flex flex-col px-6 md:px-14 lg:px-20 py-20 bg-gray-50">
+        <!-- Heading -->
+        <div class="flex flex-col items-center mb-14">
+            <h2 class="text-3xl font-bold text-center mb-4">
+                Get Involved / Take Action
+            </h2>
+
+            <div class="flex items-center gap-2">
+                <div class="h-[2px] w-12 bg-orange-300 rounded-full"></div>
+                <div class="h-[3px] w-6 bg-orange-500 rounded-full"></div>
+                <div class="h-[2px] w-12 bg-orange-300 rounded-full"></div>
+            </div>
+
+            <p class="text-gray-600 text-center mt-4 max-w-2xl">
+                Join PRA in shaping more reflective, inclusive, and transformative development practice.
+            </p>
+        </div>
+
+        <!-- Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+            <!-- Donate -->
+            <div class="flex flex-col items-center text-center bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition">
+                <div class="text-orange-500 font-bold text-2xl mb-4">
+                    Donate
+                </div>
+
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    Support PRA’s initiatives and help sustain collaborative learning spaces and field programs.
+                </p>
+
+                <a href="#"
+                class="px-6 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition">
+                    Donate Now
+                </a>
+            </div>
+
+            <!-- Volunteer / Join Cohort -->
+            <div class="flex flex-col items-center text-center bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition">
+                <div class="text-orange-500 font-bold text-2xl mb-4">
+                    Volunteer / Join a Cohort
+                </div>
+
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    Participate in learning cohorts, facilitation labs, and collaborative reflection spaces.
+                </p>
+
+                <a href="#"
+                class="px-6 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition">
+                    Join Us
+                </a>
+            </div>
+
+            <!-- Advocacy -->
+            <div class="flex flex-col items-center text-center bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition">
+                <div class="text-orange-500 font-bold text-2xl mb-4">
+                    Advocacy / Campaigns
+                </div>
+
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    Engage in campaigns that challenge systems, amplify voices, and influence policy and practice.
+                </p>
+
+                <a href="#"
+                class="px-6 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition">
+                    Take Action
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <section class="px-6 md:px-14 lg:px-20 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col">
+
+            <img src="{{ asset('assets/landing/hero.jpg') }}" alt="alt image" class="w-full h-48 object-cover" />
+
+            <div class="p-5 flex flex-col flex-1">
+                <span class="text-xs font-medium px-2 py-1 rounded-full w-fit mb-3
+                    bg-orange-100 text-orange-600">
+                    Toolkit
+                </span>
+
+                <h3 class="font-bold text-gray-900 text-lg mb-2">The title</h3>
+
+
+                <p class="text-sm text-gray-400 mb-1">Author 1</p>
+
+
+                <p class="text-sm text-gray-400 mb-3">2009</p>
+
+                <p class="text-gray-500 text-sm mb-4 flex-1">now this is the summary</p>
+
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="text-xs bg-gray-100 text-gray-500 px-2 py-1 rounded-full">Tag value</span>
+                </div>
+
+                {{-- {{ if file }}
+                <a href="{{ file }}" target="_blank"
+                    class="mt-auto inline-flex items-center gap-2 text-sm font-medium text-white bg-orange-500 hover:bg-orange-600 transition px-4 py-2 rounded-full w-fit">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                    Download
+                </a>
+                {{ elseif external_url }}
+                <a href="{{ external_url }}" target="_blank"
+                    class="mt-auto inline-flex items-center gap-2 text-sm font-medium text-white bg-orange-500 hover:bg-orange-600 transition px-4 py-2 rounded-full w-fit">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                    View Resource
+                </a>
+                {{ /if }} --}}
+            </div>
+        </div>
+    </div>
+
+</section>
+
 
     {{-- Footer --}}
     @include('static.footer')

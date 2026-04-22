@@ -1,0 +1,31 @@
+<div class="bg-white shadow-lg rounded-lg overflow-hidden">
+
+    {{ if featured_image }}
+        {{ featured_image }}
+            <img src="{{ url }}" class="w-full h-48 object-cover" alt="{{ title }}" />
+        {{ /featured_image }}
+    {{ /if }}
+
+    <div class="p-6">
+        <a href="{{ url }}" class="text-xl font-bold mb-2 block">
+            {{ title }}
+        </a>
+
+        {{ if authors }}
+            <p class="text-sm text-gray-500 mb-4">
+                By <span class="font-medium text-gray-700">{{ authors }}</span>
+            </p>
+        {{ /if }}
+
+        {{ if excerpt }}
+            <p class="text-gray-700 mb-4">
+                {{ excerpt }}
+            </p>
+        {{ /if }}
+
+        <a href="{{ url }}" class="text-orange-500 font-medium hover:underline">
+            Read More →
+        </a>
+    </div>
+
+</div>

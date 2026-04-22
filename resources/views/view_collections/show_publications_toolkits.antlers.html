@@ -1,0 +1,47 @@
+<article class="px-6 md:px-14 lg:px-20 py-16">
+    <div class="max-w-3xl mx-auto">
+
+        {{ cover_image }}
+            <img src="{{ url }}" class="w-full mb-6" />
+        {{ /cover_image }}
+
+        <h1 class="text-4xl font-bold mb-4">{{ title }}</h1>
+
+        {{ if publication_date }}
+            <p class="text-gray-500 mb-2">
+                {{ publication_date format="F j, Y" }}
+            </p>
+        {{ /if }}
+
+       {{ if authors }}
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="text-xs uppercase text-gray-400">Authors</span>
+
+                {{ authors | explode(',') }}
+                    <span class="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-full">
+                        {{ value }}
+                    </span>
+                {{ /authors }}
+            </div>
+        {{ /if }}
+
+        <div class="prose max-w-none mb-6">
+            {{ content }}
+        </div>
+
+        {{ if download_file }}
+            {{ download_file }}
+                <a href="{{ url }}" class="text-orange-500 underline">
+                    Download →
+                </a>
+            {{ /download_file }}
+        {{ /if }}
+
+        {{ if external_url }}
+            <a href="{{ external_url }}" class="text-orange-500 underline">
+                Visit External Resource →
+            </a>
+        {{ /if }}
+
+    </div>
+</article>

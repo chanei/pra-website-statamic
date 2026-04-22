@@ -1,0 +1,24 @@
+<div class="px-6 md:px-14 lg:px-20 mb-20">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        {{ collection:{collection}
+            limit="{limit}"
+            sort="{sort ?? 'date:desc'}"
+            paginate="true"
+            as="items"
+        }}
+
+            {{ items }}
+                {{ partial src="components/{collection}_card" }}
+            {{ /items }}
+
+        {{ /collection:{collection} }}
+    </div>
+
+    {{ collection:{collection} limit="{limit}" paginate="true" as="items" }}
+        {{ paginate }}
+            {{ if total_pages > 1 }}
+                {{ partial:components/pagination }}
+            {{ /if }}
+        {{ /paginate }}
+    {{ /collection:{collection} }}
+</div>
