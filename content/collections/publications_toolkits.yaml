@@ -1,0 +1,15 @@
+title: 'Publications & Toolkits'
+icon: collections
+template: view_collections/show_publications_toolkits
+layout: layout
+revisions: false
+route: 'research-publications-toolkits/{slug}'
+sort_dir: desc
+date_behavior:
+  past: null
+  future: null
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true

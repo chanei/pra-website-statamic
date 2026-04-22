@@ -1,0 +1,15 @@
+title: 'Videos & Event Recordings'
+icon: collections
+template: view_collections/show_videos_event_recordings
+layout: layout
+revisions: false
+route: 'videos-event-recordings/{slug}'
+sort_dir: asc
+date_behavior:
+  past: null
+  future: null
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true

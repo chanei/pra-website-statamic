@@ -4,7 +4,7 @@ blueprint: pages
 title: Home
 author: b3e81ce8-7344-482c-9ac6-415d9813424a
 updated_by: b3e81ce8-7344-482c-9ac6-415d9813424a
-updated_at: 1776099918
+updated_at: 1776380177
 blocks:
   -
     id: XlFziSH2I4DIIPdLxHF0_
@@ -132,14 +132,6 @@ blocks:
     heading: 'Latest Articles'
     limit: 3
     type: latest_blogs
-    enabled: true
-  -
-    id: SAcALYIKLzqPx5Xsnttjr
-    heading: 'Support our work'
-    text: 'Your contribution funds research, events and community programmes.'
-    button_label: 'Donate now'
-    button_link: 'entry::9d62c829-7ce6-4a53-8e33-4e00e7533223'
-    type: cta
     enabled: true
   -
     id: KvDE_1NXUaw0eWyAuzfiq

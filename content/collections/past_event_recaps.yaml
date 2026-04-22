@@ -1,0 +1,15 @@
+title: 'Past Event Recaps'
+icon: collections
+template: view_collections/show_past_event_recaps
+layout: layout
+revisions: false
+route: 'past-event-recaps/{slug}'
+sort_dir: desc
+date_behavior:
+  past: null
+  future: null
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true

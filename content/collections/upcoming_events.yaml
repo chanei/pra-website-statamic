@@ -1,0 +1,15 @@
+title: 'Upcoming Events'
+icon: collections
+template: view_collections/show_upcoming_events
+layout: layout
+revisions: false
+route: 'upcoming-events/{slug}'
+sort_dir: desc
+date_behavior:
+  past: null
+  future: null
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true

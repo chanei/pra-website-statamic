@@ -1,0 +1,15 @@
+title: 'Lessons Learned'
+icon: collections
+template: view_collections/show_lessons_learned
+layout: layout
+revisions: false
+route: 'lessons-learned-reflections/{slug}'
+sort_dir: asc
+date_behavior:
+  past: null
+  future: null
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true
