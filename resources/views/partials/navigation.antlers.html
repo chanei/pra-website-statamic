@@ -15,13 +15,13 @@
                     {{ /if }}
                     {{ if children }}
                         <div class="relative group">
-                            <button class="text-gray-800 px-2 text-sm font-medium hover:opacity-60 flex items-center gap-1">
+                            <a href="{{ url }}" class="text-gray-800 px-2 text-sm font-medium hover:opacity-60 flex items-center gap-1">
                                 {{ title }}
                                 <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none"
                                     stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                                 </svg>
-                            </button>
+                            </a>
                             <div class="absolute h-3 w-full top-full left-0"></div>
                             <div class="absolute left-0 top-full pt-3 w-52 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                                 {{ children }}
@@ -62,21 +62,23 @@
 
                 {{ if children }}
                     <div x-data="{ open: false }">
-                        <button
-                            class="w-full text-left text-gray-800 text-sm font-medium py-2 flex justify-between items-center hover:opacity-60"
-                            onclick="
-                                const parent = this.parentElement;
-                                const sub = parent.querySelector('.mobile-submenu');
-                                const arrow = this.querySelector('.arrow');
-                                sub.classList.toggle('hidden');
-                                arrow.classList.toggle('rotate-180');
-                            ">
-                            {{ title }}
-                            <svg id="programs-arrow" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
+                        <div class="flex justify-between items-center">
+                            <a href="{{ url }}" class="text-gray-800 text-sm font-medium py-2 hover:opacity-60">{{ title }}</a>
+                            <button
+                                class="text-gray-800 py-2 pl-4 hover:opacity-60"
+                                onclick="
+                                    const parent = this.closest('[x-data]');
+                                    const sub = parent.querySelector('.mobile-submenu');
+                                    const arrow = this.querySelector('.arrow');
+                                    sub.classList.toggle('hidden');
+                                    arrow.classList.toggle('rotate-180');
+                                ">
+                                <svg class="arrow w-4 h-4 transition-transform" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                        </div>
                         <div class="mobile-submenu hidden pl-4 border-l border-gray-300 ml-1">
                             {{ children }}
                                 <a href="{{ url }}" class="block text-gray-600 text-sm py-2 hover:opacity-60">{{ title }}</a>
